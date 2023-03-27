@@ -22,7 +22,7 @@
         main {
             height: inherit;
             overflow: hidden;
-            min-height: 900px;
+            min-height: 1000px;
             background-image: url(../svg/bk1.svg);
             background-repeat: repeat;
         }
@@ -66,8 +66,6 @@
             background-color: #354e80;
             color: #fff;
         }
-
-
     </style>
 
 </head>
@@ -133,14 +131,14 @@
                             style="vertical-align: inherit;">程序目的增强BFBAN
                         WEB功能，作为移动软体发挥查询与管理作用；增强会分三阶段逐步改进并且未来影响WEB端。</font></font>
                     </p>
-                    <p>
-                        公告: bfban v2的升级，延迟下一版本的发布，新消息请加入q群。
+                    <p class="alert alert-dismissible">
+                        网站已稳定，作者正在着手APP的开发，接入BFBAN V2 API
                     </p>
+                    <script>
+                    </script>
                     <br/>
                     <div class="btn-group" role="group"
                          aria-label="Button group with nested dropdown">
-
-
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal"
                                 data-target="#staticBackdrop">
@@ -192,7 +190,7 @@
                             </div>
                         </div>
                         <div class="col-sm">
-                            <div class=" text-muted">{{ version.version }}</div>
+                            <div class=" text-muted">{{ newVersion.version }}</div>
                         </div>
                     </div>
                     <hr/>
@@ -202,7 +200,7 @@
                             </div>
                         </div>
                         <div class="col-sm">
-                            <div class=" text-muted">{{ version.stage }}</div>
+                            <div class=" text-muted">{{ newVersion.stage }}</div>
                         </div>
                     </div>
                     <hr/>
@@ -211,17 +209,21 @@
                             <div class=" text-muted"><a href="#" class="badge badge-dark">说明</a>
                             </div>
                         </div>
+
+                    </div>
+                    <br>
+                    <div class="row">
                         <div class="col-sm">
-                            <div class=" text-muted">{{ version.describe }}</div>
+                            <div class=" text-muted" v-html="newVersion.describe"></div>
                         </div>
                     </div>
+                    <br>
                 </div>
             </div>
             <div class="col-12 col-sm-3 col-md-7">
                 <img src="../images/exhibition.png" class="exhibition">
             </div>
         </section>
-
     </div>
 </main>
 <footer class="footer">
@@ -275,24 +277,59 @@
     var app = new Vue({
         el: '#app',
         data: {
-            version: {},
+            newVersion: {
+                describe: ""
+            },
         },
 
         created() {
-            const self = this;
-            axios({
-                method: 'get',
-                url: './json/version.json',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-            }).then(function (response) {
-                self.version = response.data.list[0];
-            });
+            const self = this
+            self.getVersions();
+        },
+
+        methods: {
+            getVersions() {
+                const self = this;
+                axios({
+                    method: 'get',
+                    url: './config/version.json',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }).then(async function (response) {
+                    const d = response.data;
+
+                    self.newVersion = Object.assign(
+                        {
+                            describe: await self.getCurrentVersionPackage(d.list[0].version)
+                        },
+                        d.list[0]
+                    );
+                });
+            },
+
+            async getCurrentVersionPackage(version) {
+                if (!version) return;
+
+                return new Promise(async resolve => {
+                    let describe = "";
+
+                    let response = await axios({
+                        method: 'get',
+                        url: './config/news.json',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+
+                    response.data.news.forEach(i => {
+                        if (i.username == version)
+                            describe = i.content.join("\n");
+                    });
+
+                    resolve(describe);
+                })
+            }
         }
     });
-
-
-
-
 </script>

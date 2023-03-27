@@ -1,0 +1,24 @@
+{
+  "list": [
+    {
+      "version": "0.0.4",
+      "stage": "beta",
+      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.4-beta"
+    },
+    {
+      "version": "0.0.3",
+      "stage": "beta",
+      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.3-beta"
+    },
+    {
+      "version": "0.0.2",
+      "stage": "beta",
+      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.2-beta"
+    },
+    {
+      "version": "0.0.1",
+      "stage": "beta",
+      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.1-beta"
+    }
+  ]
+}
