@@ -2,33 +2,19 @@
   "list": [
     {
       "version": "0.2.3",
-      "stage": "alpha",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.3-alpha",
+      "stage": "beta",
       "platform": {
-        "apple-ios": {
-          "url": ""
-        },
-        "google-android": {
-          "url": ""
-        },
         "github-android": {
-          "url": ""
+          "url": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.3-beta"
         }
       }
     },
     {
       "version": "0.2.2",
       "stage": "beta",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.2-beta",
       "platform": {
-        "apple-ios": {
-          "url": ""
-        },
-        "google-android": {
-          "url": ""
-        },
         "github-android": {
-          "url": ""
+          "url": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.2-beta"
         }
       }
     },
