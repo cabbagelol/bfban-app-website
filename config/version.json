@@ -1,42 +1,33 @@
 {
   "list": [
     {
-      "version": "0.2.3",
-      "stage": "beta",
-      "platform": {
-        "github-android": {
-          "url": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.3-beta"
-        }
-      }
-    },
-    {
       "version": "0.2.2",
       "stage": "beta",
       "platform": {
         "github-android": {
-          "url": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.2.2-beta"
+          "url": "https://github.com/cabbagelol/bfban-app-mobile/releases/tag/v0.2.2-beta"
         }
       }
     },
     {
       "version": "0.0.4",
       "stage": "beta",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.4-beta"
+      "src": "https://github.com/cabbagelol/bfbanApp/bfban-app-mobile/tag/v0.0.4-beta"
     },
     {
       "version": "0.0.3",
       "stage": "beta",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.3-beta"
+      "src": "https://github.com/cabbagelol/bfbanApp/bfban-app-mobile/tag/v0.0.3-beta"
     },
     {
       "version": "0.0.2",
       "stage": "beta",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.2-beta"
+      "src": "https://github.com/cabbagelol/bfbanApp/bfban-app-mobile/tag/v0.0.2-beta"
     },
     {
       "version": "0.0.1",
       "stage": "beta",
-      "src": "https://github.com/cabbagelol/bfbanApp/releases/tag/v0.0.1-beta"
+      "src": "https://github.com/cabbagelol/bfbanApp/bfban-app-mobile/tag/v0.0.1-beta"
     }
   ]
 }
