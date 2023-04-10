@@ -75,10 +75,13 @@
     <div class="navbar navbar-dark bg-dark shadow-sm">
         <div class="container d-flex justify-content-between">
             <a href="#" class="navbar-brand d-flex align-items-center">
-                <strong><font style="vertical-align: inherit;"><font
-                        style="vertical-align: inherit;">
-                    BFBAN<span class="login-beta">Beta</span>
-                </font></font></strong>
+                <strong>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            BFBAN
+                        </font>
+                    </font>
+                </strong>
             </a>
         </div>
     </div>
@@ -90,9 +93,9 @@
             <div class="row">
                 <div class="col-10">
                     <div style="border-bottom: 2px solid #fff;height: 40px;float:left;margin:20px 30px 0 0;text-align:center;color: rgba(255, 255, 255, 0.64);">
-                        了解更多资讯
+                        首页
                     </div>
-                    <block v-for="i of [{'n': '联BFBAN网站', 'u': 'https://bfban.com'}, {'n': '设计者', 'u': 'https://cabbagelol.net/about'}, {'n': '捐赠', 'u': 'https://cabbagelol.net/%e6%8d%90%e5%8a%a9/'}, {'n': '测试申请', 'u': 'https://docs.qq.com/form/page/DVGNkVlZxWGJMYWhC'}]">
+                    <block v-for="i of [{'n': '联BFBAN网站', 'u': 'https://bfban.com'}, {'n': '设计者', 'u': 'https://cabbagelol.net/about'}, {'n': '捐赠', 'u': 'https://cabbagelol.net/%e6%8d%90%e5%8a%a9/'}, {'n': '测试申请', 'u': 'https://docs.qq.com/form/page/DVGNkVlZxWGJMYWhC'}, {'n':'反馈表单', 'u': 'https://docs.qq.com/form/page/DVFFMS1lQbFVTUmNZ'}]">
                         <a :href="i.u" target="_blank">
                             <div style="height: 40px;float:left;margin:20px 30px 0 0;text-align:center;color: rgba(255, 255, 255, 0.64);">
                                 {{i.n}}
@@ -127,63 +130,59 @@
                             <br/>调查局应用程序
                         </font>
                     </h1>
-                    <p class="lead text-muted"><font style="vertical-align: inherit;"><font
-                            style="vertical-align: inherit;">程序目的增强BFBAN
-                        WEB功能，作为移动软体发挥查询与管理作用；增强会分三阶段逐步改进并且未来影响WEB端。</font></font>
+                    <p class="lead text-muted">
+                        <font style="vertical-align: inherit;">
+                            基于BFBAN开源社区开发的移动应用，优化移动设备在BFBAN.com上本地交互。
+                        </font>
                     </p>
-                    <p class="alert alert-dismissible">
-                        网站已稳定，作者正在着手APP的开发，接入BFBAN V2 API
+                    <p class="text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>
+                        该应用由BFBAN社区支持,应用不管理任何账户
                     </p>
-                    <script>
-                    </script>
+                    <p class="text-muted">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                        </svg>
+                        目前应用还在内侧中，你可以在菜单上找到'申请测试'加入BETA中
+                    </p>
                     <br/>
-                    <div class="btn-group" role="group"
-                         aria-label="Button group with nested dropdown">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal"
-                                data-target="#staticBackdrop">
-                            下载 <span class="badge badge-light">测试</span>
-                        </button>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-backdrop="static"
-                             data-keyboard="false"
-                             tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel"
-                             aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="staticBackdropLabel">下载告示</h5>
-                                        <button type="button" class="close" data-dismiss="modal"
-                                                aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <iframe src="news-app.html" height="500"
-                                            frameborder="0"></iframe>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                                data-dismiss="modal">取消
-                                        </button>
-                                        <a href="https://github.com/cabbagelol/bfbanApp/releases"
-                                           target="_blank">
-                                            <button type="button" class="btn btn-primary">
-                                                了解,前往
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <button class="btn btn-secondary dropdown-toggle " type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        下载
+                    </button>
+                    <ul class="dropdown-menu">
+                        <a href="https://play.google.com/store/apps/details?id=com.cabbagelol.bfban" target="_blank">
+                            <li>
+                                <button class="dropdown-item" type="button">Google Play</button>
+                            </li>
+                        </a>
+                        <a href="https://apps.apple.com/us/app/bfban/id6446828173" target="_blank">
+                            <li>
+                                <button class="dropdown-item" type="button">Apple Store</button>
+                            </li>
+                        </a>
+                        <a href="https://github.com/bfban/bfban-app-mobile/releases" target="_blank">
+                            <li>
+                                <button class="dropdown-item" type="button">Github BFBAN Build</button>
+                            </li>
+                        </a>
+                    </ul>
+                    <a href="/privacy/" target="_blank">
+                        <button type="button" class="btn btn-link ">隐私协议</button>
+                    </a>
+                    <a href="/agreement/" target="_blank">
+                        <button type="button" class="btn btn-link ">使用协议</button>
+                    </a>
 
-                    </div>
-                    <a href="https://trello.com/b/ZECQnnEz/bfban-app" target="_blank">
-                        <button type="button" class="btn btn-link btn-lg">开发进度</button>
-                    </a>
-                    <a href="https://github.com/cabbagelol/bfbanApp/issues" target="_blank">
-                        <button type="button" class="btn btn-link btn-lg">帮助</button>
-                    </a>
                     <hr/>
+
                     <div class="row">
                         <div class="col-sm">
                             <div class=" text-muted"><a href="#" class="badge badge-warning">版本</a>
@@ -253,15 +252,10 @@
 </body>
 </html>
 
-<!-- JS, Popper.js, and jQuery -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+<!-- JS, Popper.js, and bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+      crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
 
 <!-- JS, baidu.com -->
