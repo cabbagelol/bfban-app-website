@@ -20,7 +20,6 @@
         }
 
         main {
-            height: inherit;
             overflow: hidden;
             min-height: 1300px;
             background-image: url(../svg/bk1.svg);
@@ -42,6 +41,7 @@
         }
 
         .exhibition {
+            position: relative;
             margin: -50px 0 -100px 0px;
             width: 1100px;
         }
@@ -69,8 +69,10 @@
 
         .hq {
             padding-top: 100px;
+            padding-bottom: 50px;
             border-top: 1px solid #f2f2f2;
         }
+
     </style>
 
 </head>
@@ -224,7 +226,7 @@
                     <br>
                 </div>
             </div>
-            <div class="col-12 col-sm-3 col-md-7">
+            <div class="col-12 col-sm-3 col-md-7" style="position: relative;overflow: hidden;height: 800px;">
                 <img src="../images/exhibition.png" class="exhibition">
             </div>
         </section>
@@ -350,4 +352,5 @@
             }
         }
     });
+
 </script>
