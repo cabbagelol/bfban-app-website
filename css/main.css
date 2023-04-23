@@ -55,3 +55,12 @@ footer {
     padding-bottom: 50px;
     border-top: 1px solid #f2f2f2;
 }
+
+.bi {
+    font-size: 1rem;
+}
+
+.bi.bi-x-circle {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
