@@ -1,23 +1,38 @@
 {
   "list": [
     {
-      "version": "0.2.5",
-      "stage": "",
+      "version": "0.2.6",
+      "stage": "release",
       "platform": {
         "google-play": {
           "url": "https://play.google.com/store/apps/details?id=com.cabbagelol.bfban"
         },
-        "google-play-test": {
-          "url": "https://play.google.com/apps/testing/com.cabbagelol.bfban"
+        "apple": {
+          "url": "https://apps.apple.com/us/app/bfban/id6446828173"
+        }
+      }
+    },
+    {
+      "version": "0.2.5",
+      "stage": "release",
+      "platform": {
+        "google-play": {
+          "url": "https://play.google.com/store/apps/details?id=com.cabbagelol.bfban"
         },
         "apple": {
           "url": "https://apps.apple.com/us/app/bfban/id6446828173"
+        }
+      }
+    },
+    {
+      "version": "0.2.5",
+      "stage": "beta",
+      "platform": {
+        "google-play-test": {
+          "url": "https://play.google.com/apps/testing/com.cabbagelol.bfban"
         },
         "apple-test": {
           "url": "https://testflight.apple.com/join/PulChYQj"
-        },
-        "官网": {
-          "url": "https://bfban-app.cabbagelol.net"
         }
       }
     },
