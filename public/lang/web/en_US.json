@@ -1,0 +1,56 @@
+{
+  "title": "BFBAN APP",
+  "nav": {
+    "home": "Home",
+    "officeWebSite": "BFBAN WebSite"
+  },
+  "agreement": {
+    "userAgreement": "user Agreement",
+    "privacyAgreement": "privacy Agreement"
+  },
+  "home": {
+    "h1-name": "BFBAN",
+    "h1": "Bureau application",
+    "h2": "Mobile application based on BFBAN open source community to optimize local interaction of mobile devices on BFBAN.com.",
+    "hint": "The app is supported by the BFBAN community and does not manage any accounts",
+    "downloadShow": {
+      "button": "Click to download BFBAN Assistant",
+      "downloadQRCode": "Download via QR code",
+      "title":"Download platform",
+      "fromFormal": "Formal",
+      "fromTest": "Beta"
+    },
+    "downloadMore": {
+      "1": "Test request",
+      "2": "Feedback",
+      "3": "Documentation",
+      "4": "Donate"
+    },
+    "version": "Version",
+    "release": "Release",
+    "other": "Other",
+    "Q&A": {
+      "title": "Q&A",
+      "1": {
+        "q": "Q: Login account using BFBAN APP Why Web version account dropped?",
+        "a": "bfban does not support multi-platform login, logging in to an account using the app will reset credentials, resulting in invalidation of other platforms\n\n(Important) As of August 20, BFBAN has supported multiple terminals, and the application has also been adapted after 0.2.6"
+      },
+      "2": {
+        "q": "Q: Will BFBAN Assistant steal my information or reveal my privacy?",
+        "a": "No, BFBAN Assistant does not have any servers of its own and does not hijack any data, bfban accounts are handled internally by bfban.com itself.\nBFBAN Assistant only locally processes the data submitted to the bfban service, but BFBAN Assistant collects individual characteristics, which are used for application analysis, and you can view the privacy agreement disclosed by the service"
+      },
+      "3": {
+        "q": "Q: Will uninstalling the APP cause the media library files to be deleted",
+        "a": "Yes."
+      },
+      "4": {
+        "q": "Q: What is the relationship between BFBAN Assistant and BFBAN?",
+        "a": "Developed by members of the BFBAN Open Source organization, the release version currently belongs to individuals, but its code is open source and anyone can participate or clone it"
+      },
+      "5": {
+        "q": "Q: The data list is not seen and the interface does not display the language",
+        "a": "Please check the mobile phone network status first, open the network;\nIf it still cannot be solved, please try to open the application details in the system Settings and check whether the app permission allows the network (note whether the release is only traffic or traffic or wifi);\nStill not solved, please try to open the app and tap 'Me' in the main screen. 'Support '&gt; 'Initial boot', release all permissions in permissions, and then go to 'I '&gt; 'Clean Up' deletes all persistent contents and restarts the application."
+      }
+    }
+  }
+}
