@@ -209,7 +209,7 @@ export default {
                     <hr class="dropdown-divider">
                   </li>
                   <li><h6 class="dropdown-header"> {{ $t('home.other') }}</h6></li>
-                  <a href="../../public/privacy" target="_blank">
+                  <a href="./privacy" target="_blank">
                     <li class="row align-items-center">
                       <div class="col">
                         <button type="button" class="btn btn-link">{{ $t('agreement.privacyAgreement') }}</button>
@@ -219,7 +219,7 @@ export default {
                       </div>
                     </li>
                   </a>
-                  <a href="../../public/agreement" target="_blank">
+                  <a href="./agreement" target="_blank">
                     <li class="row align-items-center">
                       <div class="col">
                         <button type="button" class="btn btn-link">{{ $t('agreement.userAgreement') }}</button>
