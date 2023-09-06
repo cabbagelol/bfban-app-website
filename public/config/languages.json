@@ -1,6 +1,6 @@
 {
   "title": "Language List",
-  "default": "zh-CN",
+  "default": "en-US",
   "child": [
     {
       "name": "de-DE",
@@ -12,18 +12,6 @@
       "name": "en-US",
       "label": "English",
       "fileName": "en",
-      "members": []
-    },
-    {
-      "name": "es-ES",
-      "label": "Español",
-      "fileName": "en_ES",
-      "members": []
-    },
-    {
-      "name": "it-IT",
-      "label": "Italiano",
-      "fileName": "it_IT",
       "members": []
     },
     {
