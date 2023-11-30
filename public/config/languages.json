@@ -25,7 +25,9 @@
       "name": "zh-TW",
       "label": "繁体中文",
       "fileName": "zh_TW",
-      "members": ["s0110527"]
+      "members": [{
+        "name": "s0110527"
+      }]
     }
   ]
 }
