@@ -1,18 +1,15 @@
 {
   "title": "Language List",
   "default": "en-US",
-  "child": [
-    {
-      "name": "de-DE",
-      "label": "Deutsch",
-      "fileName": "de",
-      "members": []
-    },
-    {
+  "child": [{
       "name": "en-US",
       "label": "English",
       "fileName": "en",
-      "members": []
+      "members": [{
+        "name":"B1397KB"
+      }, {
+        "name":"Return_Log"
+      }]
     },
     {
       "name": "zh-CN",
