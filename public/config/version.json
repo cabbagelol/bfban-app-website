@@ -1,6 +1,18 @@
 {
   "list": [
     {
+      "version": "0.2.10",
+      "stage": "release",
+      "platform": {
+        "google-play": {
+          "url": "https://play.google.com/store/apps/details?id=com.cabbagelol.bfban"
+        },
+        "apple": {
+          "url": "https://apps.apple.com/us/app/bfban/id6446828173"
+        }
+      }
+    },
+    {
       "version": "0.2.9",
       "stage": "release",
       "platform": {
