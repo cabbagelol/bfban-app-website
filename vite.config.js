@@ -10,6 +10,10 @@ export default defineConfig({
             targets: [{src: 'src/assets/images/*', dest: 'public/images'}],
         }),
     ],
+    server: {
+        host: "127.0.0.1",
+        port: 4000
+    },
     base: './',
     build: {
         terserOptions: {

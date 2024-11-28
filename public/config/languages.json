@@ -1,7 +1,14 @@
 {
   "title": "Language List",
   "default": "en-US",
-  "child": [{
+  "child": [
+    {
+      "name": "de-DE",
+      "label": "Deutsch",
+      "fileName": "de_DE",
+      "members": []
+    },
+    {
       "name": "en-US",
       "label": "English",
       "fileName": "en",
@@ -10,6 +17,24 @@
       }, {
         "name":"Return_Log"
       }]
+    },
+    {
+      "name": "es-ES",
+      "label": "Español",
+      "fileName": "es",
+      "members": []
+    },
+    {
+      "name": "it-IT",
+      "label": "Italiano",
+      "fileName": "it_IT",
+      "members": []
+    },
+    {
+      "name": "ja-JP",
+      "label": "日本语",
+      "fileName": "ja_JP",
+      "members": []
     },
     {
       "name": "zh-CN",
