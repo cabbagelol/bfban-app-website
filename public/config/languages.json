@@ -5,7 +5,7 @@
     {
       "name": "de-DE",
       "label": "Deutsch",
-      "fileName": "de_DE",
+      "fileName": "de",
       "members": []
     },
     {
@@ -27,7 +27,7 @@
     {
       "name": "it-IT",
       "label": "Italiano",
-      "fileName": "it_IT",
+      "fileName": "it",
       "members": []
     },
     {
